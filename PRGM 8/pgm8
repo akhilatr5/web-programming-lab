@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>prgm8</title>
+<style> 
+body{ 
+text-align: center;
+} 
+img{ 
+width: 250px;
+height: 150px;
+border-radius: 50%;
+display: block; 
+margin: 100px auto 20px;
+}
+p{
+font-size: 20px;
+}
+</style>
+<body>
+<img src="a.jpg" id="image" onmouseover="one()" onmouseout="two()">
+<p id="p1">
+</p>
+<script>
+function one()
+{
+document.getElementById("image").src="b.jpg";
+document.getElementById("p1").innerHTML="onmouseover";
+document.getElementById("p1").style.color= "blue";
+}
+function two()
+{
+document.getElementById("image").src="c.jpg";
+document.getElementById("p1").innerHTML="onmouseout";
+document.getElementById("p1").style.color="red";
+}
+</script>
+
+</body>
+</head>
+</html>
+
