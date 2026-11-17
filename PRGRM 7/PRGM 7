@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>To change background color</title>
+<style>
+p{
+margin-left: 500px;
+color: white;
+}
+button{
+margin-left: 600px;
+margin-top: 100px;
+padding: 30px;
+}
+</style>
+<body>
+<p>To change background color</p>
+<button onClick="background()">Click me</button>
+<script>
+function background()
+{
+var r=Math.floor(Math.random()*256);
+var g=Math.floor(Math.random()*256);
+var b=Math.floor(Math.random()*256);
+document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
+}
+</script>
+</body>
+</html>
+
